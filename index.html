@@ -2,14 +2,16 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/CSS/styles.css" />
-    <title>Registre-se</title>
+    <title>Formulário</title>
   </head>
+
   <body>
     <div class="container">
       <div class="form-image">
-        <img src="assets/images/undraw_my_password_re_ydq7.svg" alt="#" />
+        <img src="assets/images/undraw_my_password_re_ydq7.svg" alt="" />
       </div>
       <div class="form">
         <form action="#">
@@ -21,16 +23,19 @@
               <button><a href="#">Entrar</a></button>
             </div>
           </div>
+
           <div class="input-group">
             <div class="input-box">
-              <label for="firstName">Primeiro nome</label>
+              <label for="firstname">Primeiro Nome</label>
               <input
+                id="firstname"
                 type="text"
-                id="firstName"
-                name="firstName"
+                name="firstname"
                 placeholder="Digite seu primeiro nome"
+                required
               />
             </div>
+
             <div class="input-box">
               <label for="lastname">Sobrenome</label>
               <input
@@ -85,11 +90,13 @@
               />
             </div>
           </div>
+
           <div class="gender-inputs">
             <div class="gender-title">
-              <h6>Gêneros</h6>
+              <h6>Gênero</h6>
             </div>
-            <div class="gender-groups">
+
+            <div class="gender-group">
               <div class="gender-input">
                 <input id="female" type="radio" name="gender" />
                 <label for="female">Feminino</label>
@@ -111,6 +118,7 @@
               </div>
             </div>
           </div>
+
           <div class="continue-button">
             <button><a href="#">Continuar</a></button>
           </div>
